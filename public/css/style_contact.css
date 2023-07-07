@@ -1,0 +1,272 @@
+ /* Nav bar  */
+ *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    /* color: rgb(179, 255, 0); */
+}
+body{
+    font-family:montserrat;
+}
+nav{
+    background: #0082e6;
+    height: 80px;
+    width:100%;
+
+}
+.logo{
+    color:rgb(253, 248, 248);
+    font-size: 35px;
+    line-height:  80px;
+    padding: 2rem 100px;
+    font-weight: bold;
+    margin-top: 2rem;
+   
+
+}
+nav ul{
+    float: right;
+    margin-right:20px;
+}
+nav ul li{
+    margin-top: 4px;
+    display: inline-block;
+    line-height: 80px;
+    margin:2 5px
+    
+}
+nav ul li a {
+   
+ color: white;
+ font-size: 17px;
+ padding:7px 13px;
+ border-radius: 3px;
+ text-transform: uppercase;
+
+
+}
+a.active,a:hover{
+    background: #105ae2;
+    transition: 0.5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height:80px;
+    margin-right: 40px;
+    cursor:pointer;
+    display:none;
+}
+#check{
+    display: none;
+
+}
+@media (max-width:952px){
+    label.logo{
+        font-size:30px ;
+        padding-left: 50px;
+
+    }
+    nav ul li a{
+        font: size 16px;
+    }
+}
+@media(max-width:858px){
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top:80px;
+        left:-100%;
+        transition: all .5s;
+        text-align: center;
+    }
+    nav ul li{
+        display:block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+
+    }
+    a:hover,a.active{
+        background: none;
+        color:#0082e6
+    }
+    #check:checked ~ul{
+        left:0;
+
+    }
+
+}
+
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown ul {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown:hover ul {
+    display: block;
+  }
+  
+  .dropdown ul li a {
+    color: #0082e6;
+    background-color:white;
+    padding: 6px 10px;
+    text-decoration: none;
+
+    display: flex;
+    line-height: 100%;
+    /* text-align: left; */
+    min-width: 100px; /* add a minimum width */
+    max-height: 220px; /* set a maximum height */
+  }
+  
+  .dropdown ul li a:hover {
+    background-color:rgb(162, 211, 234);
+  }
+
+
+section{
+    background: url(bg1.jpg) no-repeat;
+    background-size:cover;
+    height:calc(100hv-80px);
+}  
+
+
+/* body
+*/
+ .contact-section {
+    background-color: #f7f7f7; 
+ }
+  
+  
+  form {
+    margin-left: 150px;
+    margin-right: 150px;
+    /* padding: top 20px; */
+     /* margin-top: 150px;   */
+    overflow-x: auto;
+  }
+  
+  
+  .label_body {
+    display: block;
+     margin-left: 25px;
+    margin-right: 25px;
+    /* margin-bottom: 10px; */
+     /* margin-top: 10px;   */
+    font-weight: bold;
+    overflow-x: auto;
+  }
+  
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  button[type="submit"] {
+    background-color: #2376e2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #083d93;
+  }
+  
+    .paragraph{
+        margin-top:20px;
+        margin-left:150px;
+    }
+  .is_ul{
+    list-style: none;
+    margin-left: 200px;
+    margin-top:20px;
+    padding: 0;
+  }
+  
+  .is_li{
+    margin-bottom: 10px;
+  }  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* footer */
+
+    footer {
+        width:100vw;
+        background-color: #0082e6;
+        padding: 20px;
+      }
+      
+      .footer-nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .footer-nav li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+      
+      .footer-nav li:last-child {
+        margin-right: 0;
+      }
+      
+      .footer-nav a {
+        color: white;
+        text-decoration: none;
+      }
+      
+      .footer-nav a:hover {
+        text-decoration: underline;
+      }
+      
+      .bottom-bar {
+        background-color: #0082e6;
+        color: #0082e6;
+        padding: 10px;
+        text-align: center;
+      }
